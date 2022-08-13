@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+header {
+    width: 100px;
+    height: 100vh;
+}
+header nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index:15;
+
+}
+::selection {
+    background-color: blueviolet;
+}
+.nav-bar {
+    display: flex;
+    width: 85%;
+    margin: 25px auto 0px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .menu{
+    display: flex;
+}
+nav .menu li {
+    margin:10px;
+    list-style: none;
+}
+nav .menu a:hover{
+    color: aqua;
+}
+nav .menu a{
+    font-size: 15px;
+    color: burlywood;
+    font-weight: 700;
+    text-decoration: none;
+}
+nav .searchBox {
+    position: relative;
+    left: 10px;
+    top: 10%;
+    font-size: 13px;
+    color: aquamarine;
+    border: 2px solid gray;
+    padding: 0px 1px 0px 0px;
+
+}
+.textContent{
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    z-index: 10;
+}
+header .textContent .text{
+    font-size:20px;
+    color: gold;
+}
+header .textContent .name {
+    font-size: 50px;
+    color: green;
+    font-weight: 600;
+    margin: -20px 0 0 -5px;
+
+}
+header .textContent .job{
+    font-size: 35px;
+    color: pink;
+    margin: 20px 0;
+    display: flex;
+    margin-top: -3px;
+
+}
+.textContent .typingtext {
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 5px solid aqua;
+    animation:typing 6s steps(15) infinite;
+
+}
+@keyframes typing{
+    0%{
+        width: 0ch;
+
+    }
+    50%{
+        width: 19ch;
+    }
+    100%{
+       width: 0ch;
+    }
+}
+.content .image {
+    position: absolute;
+    bottom: 0;
+    height:100%;
+    right: 80px;
+    /* width: 280px; */
+    
+}
+.mediaIcons {
+    display: flex;
+    flex-flow:column;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+.mediaIcons {
+    font-size: 30px;
+    font-weight: 500;
+    color:brown;
+    text-decoration: none;
+    opacity: 0.6;
+}
